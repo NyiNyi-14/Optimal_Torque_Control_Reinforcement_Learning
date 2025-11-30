@@ -9,6 +9,8 @@ This work originates from the author's master’s thesis and was later published
 ## Project Structure
 The project is organized into five steps, corresponding to five work packages (WP01–WP05). Each work package corresponds to its own chapter or section in the thesis.
 
+---
+
 ### WP01: Introduction to DDPG and EESM
 
 <p align="center">
@@ -39,6 +41,8 @@ Install dependencies using:
 pip install -r requirements.txt
 ```
 
+---
+
 ## WP02: CCS Current Control
 
 <p align="center">
@@ -51,6 +55,8 @@ WP02 is the simulation file for CCS current control where current control of EES
 ```bash
 jupyter notebook WP02_EESM_Transformation_CurrentControl.ipynb
 ```
+
+---
 
 ## WP03: PI-assisted RL Control
 
@@ -70,6 +76,8 @@ WP03 is the CCS torque control where PI-regulated excitation circuit and RL-regu
 jupyter notebook WP03_EESM_Transformation_PI_RL_integrated.ipynb
 ```
 
+---
+
 ## WP04: Performance Priority Control
 
 <p align="center">
@@ -84,15 +92,21 @@ jupyter notebook WP03_EESM_Transformation_PI_RL_integrated.ipynb
 
 WP04 is the CCS torque control with performance priority strategy. The PMSM reward design is integrated with excitation current limitation for the reward design. The same noise behaviour is utilised.
 
+---
+
 ## WP05: Efficiency Priority Control
 
 WP05 is the CCS torque control with efficiency priority method. The efficiency calculation is considered and reflected to the reward design. Same noise behaviour as above is used.
+
+---
 
 ## Note
 
 For all of the above simulation, the gym-electric-motor 2.0.0 is used as a basis to exchange the EESM and the uploaded EESM file; `externally_excited_synchronous_motor.py` is used as a transformation branch of GEM. The other libraries and their respective version are mentioned in the document. Then, for the (dq_to_abc_action_processor) and (cos_sin_processor),  the uploaded ones; `dq_to_abc_action_processor.py` and `cos_sin_processor.py` in this repository are used.
 
 All results and implementation details can be found in the two documents referenced at the beginning.
+
+---
 
 ## Citation
 
